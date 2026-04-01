@@ -25,7 +25,7 @@ function openModal(projectId) {
     // Build screenshot gallery
     let galleryHTML = '';
     if (data.images && data.images.length > 0) {
-        galleryHTML = data.images.map(img => `<img src="${img}" style="width: 100%; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Screenshot">`).join('');
+        galleryHTML = data.images.map(img => `<img src="${img}" loading="lazy" style="width: 100%; height: auto; object-fit: contain; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5);" alt="Screenshot">`).join('');
     } else {
         galleryHTML = `<div class="image-placeholder-box">
                 <i class="fa-regular fa-image" style="font-size: 3rem;"></i>
