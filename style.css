@@ -609,4 +609,8 @@ footer {
     
     section { padding: 6rem 0; min-height: auto; }
     .hero { margin-top: 8rem; }
+    .hero-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .profile-wrapper { margin: 0 auto 2rem auto; }
+    .title { justify-content: center; }
+    .tech-stack-hero { justify-content: center; }
 }
